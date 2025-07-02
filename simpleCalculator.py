@@ -8,7 +8,9 @@ def multiply(a,b):
 def divide(a,b):
     if b == 0:
         print("Error: Division by zero is not possible")
-    return a/b
+        return
+    else:
+        return a/b
 
 operations_dict = {
     "+":add,
