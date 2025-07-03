@@ -21,7 +21,7 @@ operation_dict = {
 }
 
 def showHistory():
-    fp = open("HISTORY_FILE","r")
+    fp = open(HISTORY_FILE,"r")
     lines = fp.readlines()
     if len(lines) == 0:
         print("No Histroy Found!!")
@@ -31,12 +31,12 @@ def showHistory():
         fp.close()
 
 def clear_history():
-    file = open("HISTORY_FILE","w")
+    file = open(HISTORY_FILE,"w")
     file.close()
     print("History Cleared Successfully!!")
 
 def save_history(equation,result):
-    fp = open("HISTORY_FILE","a")
+    fp = open(HISTORY_FILE,"a")
     fp.write(f"{equation} = {result} \n")
     fp.close()
 
