@@ -17,8 +17,11 @@ def list_all_videos():
         print("No videos found!")
         return
     else:
+        print(f"{'ID':<5} {'Name':<30} {'Time':<15}")
+        print("-" * 52)
         for row in rows:
-            print(row)
+            print(f"{row[0]:<5} {row[1]:<30} {row[2]:<15}")
+        print("-" * 52)
 
 def add_video():
     name = input("Enter the video name: ")
