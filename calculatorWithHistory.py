@@ -50,7 +50,7 @@ def calculate(user_input):
         op = parts[1]
         num2 = float(parts[2])
     except ValueError:
-        print("Invalid Numbes. Please enter valid numbers! ")
+        print("Invalid Numbers. Please enter valid numbers! ")
         return
 
     if op not in operation_dict:
